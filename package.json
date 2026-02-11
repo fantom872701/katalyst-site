@@ -1,0 +1,13 @@
+{
+  "name": "katalyst-site",
+  "version": "1.0.0",
+  "description": "Katalyst IT Solutions site",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.1"
+  }
+}
