@@ -10,15 +10,18 @@
 <body>
   <header class="navbar">
     <div class="logo">Katalyst<span>IT</span></div>
-    <nav>
+    <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#solutions">Solutions</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
   </header>
 
-  <section class="hero">
+  <section class="hero fade-in">
     <div class="hero-content">
       <h1>Empowering Your Digital Transformation</h1>
       <p>
@@ -28,10 +31,13 @@
         <a href="#contact" class="btn primary">Book a Consultation</a>
         <a href="#services" class="btn secondary">View Services</a>
       </div>
+      <div class="server-status" id="server-status">
+        Server status: <span class="status-dot"></span><span class="status-text">Checking...</span>
+      </div>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section id="services" class="section fade-in">
     <h2>Services</h2>
     <div class="cards">
       <div class="card">
@@ -55,7 +61,7 @@
     </div>
   </section>
 
-  <section id="solutions" class="section alt">
+  <section id="solutions" class="section alt fade-in">
     <h2>Who We Work With</h2>
     <div class="cards">
       <div class="card">
@@ -79,18 +85,47 @@
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section fade-in">
     <h2>About Katalyst IT Solutions</h2>
     <p class="about-text">
       Katalyst IT Solutions is a technology partner focused on practical innovation. We combine software engineering,
       automation, and AI to help teams move faster with less friction. From architecture to implementation, we focus on
       clarity, reliability, and measurable outcomes.
     </p>
+
+    <div class="founder-block">
+      <img src="founder.jpg" alt="Founder - Vikas Thakur" class="founder-photo" />
+      <div>
+        <h3>Founder</h3>
+        <p><strong>Vikas</strong> — A detail‑oriented IT, automation, and analytics expert with deep experience in building scalable systems, AI-driven workflows, and modern digital infrastructure. She founded Katalyst IT Solutions to help businesses adopt smarter, faster, and more reliable technology.</p>
+      </div>
+    </div>
+
+    <div class="purpose-vision">
+      <h3>Our Purpose</h3>
+      <p>
+        To empower businesses with intelligent software, automation, and AI systems that eliminate friction, reduce manual work,
+        and accelerate digital transformation.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To become a leading global partner for AI-driven engineering — helping startups, growing companies, and enterprise teams
+        build resilient, automated, and future-ready technology ecosystems.
+      </p>
+    </div>
   </section>
 
-  <section id="contact" class="section alt">
+  <section id="contact" class="section alt fade-in">
     <h2>Contact Us</h2>
-    <p>Tell us briefly about your project, and we’ll get back to you with next steps.</p>
+    <p>Tell us briefly about your project, and we’ll get back to you with next steps</p>
+
+    <div class="contact-details">
+      <p><span class="icon">📧</span> <strong>Email:</strong>vikas1190thakur@gmail.com</p>
+      <p><span class="icon">📞</span> <strong>Phone:</strong> +1 (416) 428‑0230</p>
+      <p><span class="icon">📍</span> <strong>Location:</strong> Brampton, Ontario, Canada</p>
+    </div>
+
     <form id="contact-form">
       <div class="form-row">
         <label for="name">Name</label>
