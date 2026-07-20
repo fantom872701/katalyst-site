@@ -31,6 +31,29 @@ checkServerStatus();
 // Re-check every 30 seconds
 setInterval(checkServerStatus, 30000);
 
+// =========================
+// Auto Slideshow
+// =========================
+
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlides() {
+  slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].classList.add("active");
+  dots[slideIndex - 1].classList.add("active");
+
+  setTimeout(showSlides, 3000); // 3 seconds per slide
+}
+
+showSlides();
+
 
 // =========================
 // Mobile Navigation Toggle
