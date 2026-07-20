@@ -3,12 +3,12 @@
 =========================== */
 
 :root {
-  --bg: #0a0f1f;
-  --bg-alt: #11182d;
+  --bg: #0f0f0f;        /* 60% main background */
+  --bg-alt: #1a1a1a;    /* 40% secondary background */
   --text: #ffffff;
-  --muted: #c7c9d3;
+  --muted: #c7c7c7;
   --accent: #6366f1;
-  --card-bg: #1a2238;
+  --card-bg: #1e1e1e;
   --transition: 0.25s ease;
 }
 
@@ -69,12 +69,13 @@ body {
 }
 
 /* ===========================
-   HERO SECTION
+   HERO SECTION (60%)
 =========================== */
 
 .hero {
   padding: 120px 32px;
   text-align: center;
+  background: var(--bg);
 }
 
 .hero h1 {
@@ -119,15 +120,16 @@ body {
 }
 
 /* ===========================
-   SECTIONS
+   SECTIONS (60/40 RULE)
 =========================== */
 
 .section {
   padding: 80px 32px;
+  background: var(--bg);
 }
 
 .section.alt {
-  background: var(--bg-alt);
+  background: var(--bg-alt); /* 40% background */
 }
 
 .section h2 {
@@ -178,7 +180,7 @@ body {
 }
 
 /* ===========================
-   CONTACT FORM
+   CONTACT FORM (Aligned)
 =========================== */
 
 form {
@@ -208,10 +210,10 @@ textarea {
   padding: 12px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #0b1020;
+  background: #0b0b0b;
   color: var(--text);
   font-size: 0.95rem;
-  box-sizing: border-box; /* CRITICAL FIX */
+  box-sizing: border-box;
 }
 
 textarea {
@@ -231,13 +233,13 @@ textarea:focus {
 }
 
 /* ===========================
-   FOOTER
+   FOOTER (60%)
 =========================== */
 
 .footer {
   text-align: center;
   padding: 24px;
-  background: var(--bg-alt);
+  background: var(--bg);
   margin-top: 40px;
 }
 
