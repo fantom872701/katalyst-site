@@ -7,7 +7,9 @@
   <meta name="description" content="Katalyst IT Solutions delivers AI-driven software, automation, and cloud solutions to accelerate your digital transformation." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">Katalyst<span>IT</span></div>
     <nav class="nav-links">
@@ -16,11 +18,10 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      ☰
-    </button>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
   </header>
 
+  <!-- HERO -->
   <section class="hero fade-in">
     <div class="hero-content">
       <h1>Empowering Your Digital Transformation</h1>
@@ -34,54 +35,45 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
   <section id="services" class="section fade-in">
     <h2>Services</h2>
     <div class="cards">
       <div class="card">
         <h3>Custom Software & APIs</h3>
-        <p>
-          Design and development of secure, scalable web applications, APIs, and internal tools tailored to your workflows.
-        </p>
+        <p>Design and development of secure, scalable web applications, APIs, and internal tools tailored to your workflows.</p>
       </div>
       <div class="card">
         <h3>AI & Automation</h3>
-        <p>
-          Integrate AI agents, workflow automation, and data-driven decision systems to reduce manual work and increase speed.
-        </p>
+        <p>Integrate AI agents, workflow automation, and data-driven decision systems to reduce manual work and increase speed.</p>
       </div>
       <div class="card">
         <h3>Cloud & DevOps</h3>
-        <p>
-          Cloud architecture, CI/CD pipelines, and infrastructure automation to keep your systems reliable and deployment-ready.
-        </p>
+        <p>Cloud architecture, CI/CD pipelines, and infrastructure automation to keep your systems reliable and deployment-ready.</p>
       </div>
     </div>
   </section>
 
+  <!-- SOLUTIONS -->
   <section id="solutions" class="section alt fade-in">
     <h2>Who We Work With</h2>
     <div class="cards">
       <div class="card">
         <h3>Startups</h3>
-        <p>
-          MVPs, rapid iterations, and automation-first foundations so you can scale without breaking your stack.
-        </p>
+        <p>MVPs, rapid iterations, and automation-first foundations so you can scale without breaking your stack.</p>
       </div>
       <div class="card">
         <h3>Growing Businesses</h3>
-        <p>
-          Replace spreadsheets and manual processes with integrated systems, dashboards, and smart workflows.
-        </p>
+        <p>Replace spreadsheets and manual processes with integrated systems, dashboards, and smart workflows.</p>
       </div>
       <div class="card">
         <h3>Enterprise Teams</h3>
-        <p>
-          Modernize legacy systems, integrate AI safely, and streamline delivery with robust governance and security.
-        </p>
+        <p>Modernize legacy systems, integrate AI safely, and streamline delivery with robust governance and security.</p>
       </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="section fade-in">
     <h2>About Katalyst IT Solutions</h2>
     <p class="about-text">
@@ -91,8 +83,7 @@
     </p>
 
     <div class="founder-block">
-      <!-- ⭐ Your uploaded founder photo goes here -->
-      <img src="founder.jpeg" alt="Founder - Vikas Thakur" class="founder-photo" />
+      <img src="founder.jpg" alt="Founder - Vikas Thakur" class="founder-photo" />
       <div>
         <h3>Founder</h3>
         <p><strong>Vikas Thakur</strong> — A detail‑oriented IT, automation, and analytics expert with deep experience in building scalable systems, AI-driven workflows, and modern digital infrastructure. He founded Katalyst IT Solutions to help businesses adopt smarter, faster, and more reliable technology.</p>
@@ -101,22 +92,17 @@
 
     <div class="purpose-vision">
       <h3>Our Purpose</h3>
-      <p>
-        To empower businesses with intelligent software, automation, and AI systems that eliminate friction, reduce manual work,
-        and accelerate digital transformation.
-      </p>
+      <p>To empower businesses with intelligent software, automation, and AI systems that eliminate friction, reduce manual work, and accelerate digital transformation.</p>
 
       <h3>Our Vision</h3>
-      <p>
-        To become a leading global partner for AI-driven engineering — helping startups, growing companies, and enterprise teams
-        build resilient, automated, and future-ready technology ecosystems.
-      </p>
+      <p>To become a leading global partner for AI-driven engineering — helping startups, growing companies, and enterprise teams build resilient, automated, and future-ready technology ecosystems.</p>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="section alt fade-in">
     <h2>Contact Us</h2>
-    <p>Tell us briefly about your project, and we’ll get back to you with next steps</p>
+    <p>Tell us briefly about your project, and we’ll get back to you with next steps.</p>
 
     <div class="contact-details">
       <p><span class="icon">📧</span> <strong>Email:</strong> vikas1190thakur@gmail.com</p>
@@ -129,23 +115,28 @@
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
       </div>
+
       <div class="form-row">
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required />
       </div>
+
       <div class="form-row">
         <label for="company">Company (optional)</label>
         <input id="company" name="company" type="text" />
       </div>
+
       <div class="form-row">
         <label for="message">Project details</label>
         <textarea id="message" name="message" rows="4" required></textarea>
       </div>
+
       <button type="submit" class="btn primary">Send Message</button>
       <p id="form-status" class="form-status"></p>
     </form>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© <span id="year"></span> Katalyst IT Solutions. All rights reserved.</p>
   </footer>
