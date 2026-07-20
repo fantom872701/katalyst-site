@@ -185,6 +185,50 @@ body {
   background: var(--accent);
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.founder-photo {
+  animation: glowPulse 3s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(99,102,241,0.4); }
+  50% { box-shadow: 0 0 25px rgba(99,102,241,0.7); }
+  100% { box-shadow: 0 0 10px rgba(99,102,241,0.4); }
+}
+
+input,
+textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(99,102,241,0.5);
+}
+
+
+
 /* ===========================
    CARDS
 =========================== */
